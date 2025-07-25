@@ -18,6 +18,7 @@ body {
   gap: 0.5em;
 }
 #hamburger-icon {
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -36,6 +37,8 @@ span {
 
 .hamburgerMenu {
   position: fixed;
+  z-index: 999;
+  top: -0.1px;
   right: 0;
   width: 90%;
   height: 100vh;
@@ -51,7 +54,7 @@ a {
   font-size: 1.2rem;
 }
 ul {
-  margin-top: 5em;
+  margin-top: 10em;
   list-style: none;
   color: antiquewhite;
 }
@@ -72,4 +75,37 @@ li {
 }
 #hamburger-icon.open > span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
+}
+#text-slide-container {
+  width: 99%;
+  overflow: hidden;
+}
+.text-slide {
+  padding: 1em 0em;
+  white-space: nowrap;
+  animation: sideslide 15s infinite;
+}
+
+@keyframes sideslide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-179%);
+  }
+}
+
+img {
+  height: 10em;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+section {
+  width: 80%;
+  height: 5%;
+  margin-left: 30px;
+}
+#carouselExampleCaptions {
+  height: 10em;
 }
