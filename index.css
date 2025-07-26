@@ -22,7 +22,7 @@ header {
   align-items: center;
 }
 #food-logo {
-  color: antiquewhite;
+  color: white;
   display: flex;
   align-items: center;
   width: 60%;
@@ -112,6 +112,11 @@ li {
   object-fit: cover;
   border-radius: 10px;
 }
+.carousel-item {
+}
+img > .cook {
+  height: 5em;
+}
 .search-container {
   padding-left: 1em;
   margin-bottom: 0px;
@@ -158,6 +163,18 @@ footer {
   height: 100%;
   width: 100%;
   margin-top: 6em;
+}
+.about-footer {
+  color: #faebd7;
+  background-color: black;
+  height: 50%;
+  width: 100%;
+  margin-top: 6em;
+  padding-top: 1em;
+}
+.about-footer-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 .jellof,
@@ -228,11 +245,100 @@ h3 {
 .copyright {
   padding-top: 3em;
   padding-bottom: 1em;
-  width: 40%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 .star {
   color: gold;
   font-size: 1.5rem;
+}
+.name,
+.email,
+.phone,
+.message {
+  margin-bottom: 0.5em;
+}
+.contact-container {
+}
+.name > input,
+.email > input,
+.phone > input,
+.message > input {
+  width: 90%;
+  margin-left: 1em;
+  border-bottom: none;
+  border: 0.1em thin black;
+}
+.name > input:focus,
+.email > input:focus,
+.phone > input:focus,
+.message > input:focus {
+  outline: none;
+}
+.message > input {
+  height: 7em;
+}
+.submit-container {
+}
+button {
+  width: 90%;
+  margin-left: 1em;
+  padding: 0.5em 0em;
+  font-size: 1em;
+  background-color: red;
+  border: none;
+  color: white;
+}
+.icon-containers {
+  display: flex;
+
+  gap: 1.5em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 2em;
+}
+.Opening-hours {
+  color: red;
+}
+.head-office > p {
+  margin-left: 0px;
+  width: 80%;
+}
+.head-office > h3 {
+  margin-left: 0px;
+  width: 60%;
+}
+.phone-no > p {
+  margin-left: 0px;
+  width: 60%;
+  margin-top: 0px;
+}
+.phone-no > h3 {
+  margin-left: 0px;
+  width: 60%;
+  margin-bottom: 0px;
+}
+.email-adress > p {
+  margin-left: 0px;
+  width: 60%;
+  margin-top: 0px;
+}
+.email-adress > h3 {
+  margin-left: 0px;
+  width: 60%;
+  margin-bottom: 0px;
+}
+
+.Opening-container {
+  padding-left: 1em;
+
+  margin-bottom: 0px;
+}
+.leave-message {
+  color: red;
+  padding-left: 1em;
+  width: 60%;
 }
