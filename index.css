@@ -91,7 +91,7 @@ li {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-179%);
+    transform: translateX(-190%);
   }
 }
 
@@ -108,4 +108,8 @@ section {
 }
 #carouselExampleCaptions {
   height: 10em;
+}
+#restaurant-image {
+  background-image: url("Restauranthuman.jpeg");
+  height: 20em;
 }
