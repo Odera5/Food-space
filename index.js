@@ -5,11 +5,19 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.appendChild(hamburgerMenu);
   const list = document.createElement("ul");
   hamburgerMenu.appendChild(list);
-  const items = ["Home", "About us", "Contact", "Service"];
+  const items = [
+    { text: "Home", href: "index.html" },
+    { text: "About us", href: "about.html" },
+    { text: "Contact Us", href: "contact.html" },
+    { text: "Service", href: "service.html" },
+  ];
   items.forEach((item) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
-    a.textContent = item;
+    a.textContent = item.text;
+    a.href = item.href;
+    a.style.textDecoration = "none";
+    a.style.color = "white";
     li.appendChild(a);
     list.appendChild(li);
   });
