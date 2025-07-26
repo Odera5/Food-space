@@ -99,10 +99,13 @@ img {
   height: 10em;
   width: 200px;
   object-fit: cover;
+  border-radius: 10px;
 }
 section {
-  width: 100%;
-  height: 5%;
+  width: 90%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #carouselExampleCaptions {
   height: 10em;
