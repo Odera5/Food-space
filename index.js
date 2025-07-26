@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { text: "Home", href: "index.html" },
     { text: "About us", href: "about.html" },
     { text: "Contact Us", href: "contact.html" },
-    { text: "Service", href: "service.html" },
+    { text: "Service" },
   ];
   items.forEach((item) => {
     const li = document.createElement("li");
