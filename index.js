@@ -40,5 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   reveals.forEach((reveal) => {
     observer.observe(reveal);
+
+    reveal.addEventListener("click", () => {
+      reveal.classList.toggle("moved");
+    });
   });
 });
